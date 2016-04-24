@@ -93,12 +93,12 @@ function prepareSlideshow(){
 	var slideshow=document.createElement("div");
 	slideshow.setAttribute("id","slideshow");
 	var preview=document.createElement("img");
-	preview.setAttribute("src","images/slideshow.gif");
+	preview.setAttribute("src","../images/slideshow.gif");
 	preview.setAttribute("alt","a glimpse of what awaits you");
 	preview.setAttribute("id","preview");
 	slideshow.appendChild(preview);
 	var frame=document.createElement("img");
-	frame.setAttribute("src","images/frame.gif");
+	frame.setAttribute("src","../images/frame.gif");
 	frame.setAttribute("alt","");
 	frame.setAttribute("id","frame");
 	slideshow.appendChild(frame);
@@ -182,7 +182,7 @@ function preparePlaceholder(){
 	if(!document.getElementById("imagegallery"))return false;
 	var placeholder=document.createElement("img");
 	placeholder.setAttribute("id","placeholder");
-	placeholder.setAttribute("src","images/placeholder.gif");
+	placeholder.setAttribute("src","../images/placeholder.gif");
 	placeholder.setAttribute("alt","my image gallery");
 	var description=document.createElement("p");
 	description.setAttribute("id","description");
@@ -367,7 +367,7 @@ function displayAjaxLoading(element){
 		element.removeChild(element.lastChild);
 	}
 	var content=document.createElement("img");
-	content.setAttribute("src","images/loading.gif");
+	content.setAttribute("src","../images/loading.gif");
 	content.setAttribute("alt","loading...");
 	element.appendChild(content);
 }
